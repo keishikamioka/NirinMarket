@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+
+/*「大」ボタンを押した時の文字サイズ*/
+body {
+	font-size: 30px;	/*文字サイズ*/
+}
+/*「小」ボタン設定*/
+#fsize ul li#small a::before {
+	background: #ccc;	/*背景色*/
+}
+/*マウスオン時の「小」ボタン設定*/
+#fsize ul li#small a:hover::before {
+	background: #2b3f7f;	/*背景色*/
+}
+/*「大」ボタン設定*/
+#fsize ul li#large a::before {
+	background: #2b3f7f;	/*背景色*/
+}
+
+/*listブロック（※２カラムも３カラムと１列レイアウトと同じように設定しなおす）
+---------------------------------------------------------------------------*/
+/*listブロック設定*/
+.list {
+	margin: 0 2% 30px !important;
+	padding: 4% !important;
+	float: none !important;
+	width: auto !important;
+}
+/*h4タグ設定*/
+.list h4 {
+	font-size: 200% !important;
+}
+/*段落タグ設定*/
+.list p {
+	font-size: 100% !important;
+	line-height: 1.8 !important;
+	height: auto !important;
+}

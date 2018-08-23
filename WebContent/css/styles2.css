@@ -1,0 +1,129 @@
+table {
+ table-layout:fixed;
+ width:800px;
+ border-collapse: collapse;
+}
+table.bg-primary{
+ table-layout:fixed;
+ width:818px;
+ border-collapse: collapse;
+ background: linear-gradient(#00d0ff, #008cff);
+}
+table.bg-primary td{
+ border: solid 1px;
+ border-color: white;
+ color: white;
+ text-align: center;
+}
+td.bikecolumn {
+	text-align: center;
+	font-size : 20px;
+	border: 1px solid  #C0C0C0 ;
+    border-top-style:none;
+    border-left-style:none;
+	border-right-style:none;
+
+}
+
+th {
+ border: solid 1px;
+ padding: 0.5em;
+ width: 100px;
+ height: 50px;
+ align: justify;
+ vertical-align: middle;
+}
+td{
+ width: 100px;
+ height: 50px;
+  text-align:justify;
+  vertical-align:middle;
+}
+tr.list {
+ width: 100px;
+ height: 50px;
+ align: justify;
+ vertical-align: middle;
+ border: 1px #E3E3E3 solid;
+ cursor:pointer;
+}
+ tr.list:hover{
+ color:#dd0000;
+ background:#ccc
+}
+body {
+  margin: 0px;
+  padding:0px;
+  height: 100px;
+}
+div {
+  height: 100px;
+}
+div.lane{
+  height:50%;
+  padding: 0.5em;
+  text-align:middle;
+}
+span.lane_a{
+  padding:5px;
+  border-radius:10px;
+  color:white;
+  background:green;
+}
+span.lane_b{
+  padding:5px;
+  border-radius:10px;
+  color:white;
+  background:red;
+}
+span.lane_c{
+  padding:5px;
+  border-radius:10px;
+  color:white;
+  background:blue;
+}
+span.lane_d{
+  padding:5px;
+  border-radius:10px;
+  color:white;
+  background:orange;
+}
+.btn{
+  padding:auto;
+}
+nav {
+  height: 72px
+}
+ul {
+  height: 72px;
+}
+#prev, #next {
+  color: blue;
+  cursor: pointer;
+}
+#toppage, #last {
+  cursor: pointer;
+}
+#Container .mix{
+  display: none;
+}
+td.page{
+  color: blue;
+  align:center;
+  text-align:center;
+  vertical-align:middle;
+}
+td.page1{
+  color: black;
+  align:center;
+  text-align:center;
+  vertical-align:middle;
+}
+div.container{
+width:780px;
+height:30px;
+}
+#bikelist td{
+border: 1px #E3E3E3 solid;
+text-align:center;
+}

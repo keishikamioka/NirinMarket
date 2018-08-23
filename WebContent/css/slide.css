@@ -1,0 +1,355 @@
+@charset "utf-8";
+
+
+/*CSSスライドショー設定
+---------------------------------------------------------------------------*/
+/*１枚目*/
+@keyframes slide1 {
+	0% {opacity: 0;}
+	10% {opacity: 1;}
+	30% {opacity: 1;}
+	40% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*２枚目*/
+@keyframes slide2 {
+	0% {opacity: 0;}
+	20% {opacity: 0;}
+	30% {opacity: 1;}
+	60% {opacity: 1;}
+	70% {opacity: 0;}
+	100% {opacity: 0;}
+}
+/*３枚目*/
+@keyframes slide3 {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	60% {opacity: 1;}
+	85% {opacity: 1;}
+	95% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+/*mainimg
+---------------------------------------------------------------------------*/
+/*画像ブロック*/
+.mainimg {
+	clear: left;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	box-shadow: 0px 20px 30px rgba(0,0,0,0.1);
+}
+/*３枚画像の共通設定*/
+.slide1,.slide2,.slide3 {
+	animation-duration: 15s;	/*実行する時間。「s」は秒の事。*/
+	animation-iteration-count:infinite;		/*実行する回数。「infinite」は無限に繰り返す意味。*/
+	position: absolute;left:0px;top:0px;width: 100%;height: auto;
+	animation-fill-mode: both;
+	animation-delay: 1s;
+}
+/*土台画像*/
+.slide0 {
+	position: relative;width: 100%;height: auto;
+}
+/*１枚目*/
+.slide1 {
+	animation-name: slide1;				/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*２枚目*/
+.slide2 {
+	animation-name: slide2;				/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+/*３枚目*/
+.slide3 {
+	animation-name: slide3;		/*上で設定しているキーフレーム（keyframes）の名前*/
+}
+#ContactConfirm{
+	display:none;
+}
+/*Submitボタン*/
+a.Bt, input.Bt {
+	position: relative;
+	top: 1px;
+	left: 207px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 10px;
+    background: linear-gradient(#DDDDDD, #CCCCCC);
+    cursor: pointer;
+    text-align: center;
+    color: #444444;
+    border: none;
+}
+input.resetfont {
+	position: relative;
+	top: 1px;
+	left: 221px;
+    font-size: 1.0em;
+}
+/*バイク情報テーブル*/
+.bikecolumn{
+	text-align: center;
+vertical-align: middle;
+}
+.heder1 {
+text-align: center;
+vertical-align: middle;
+width:140px;
+}
+.heder2 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder3 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder4 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder5 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder6 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder7 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder8 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.heder9 {
+text-align: center;
+vertical-align: middle;
+width:130px;
+}
+.row{
+	border: 2px #808080 solid;
+}
+
+/*リンクボタン*/
+.page{
+  color: blue;
+  align:center;
+  text-align:center;
+  vertical-align:middle;
+}
+.page1{
+  color: black;
+  align:center;
+  text-align:center;
+  vertical-align:middle;
+}
+tr.list {
+    width: 100px;
+    height: 50px;
+    align: justify;
+    vertical-align: middle;
+    border: 1px #E3E3E3 solid;
+    cursor: pointer;
+}
+tr.list:hover{
+    color: #ff0000;
+    background: #EEEEEE;
+}
+td.heder10{
+	/*visibility:hidden;*/
+	 display: none;
+}
+div.imglink{
+	position: relative;
+	top: 5px;
+	left: 60px;
+}
+div.bikeinfo{
+	position: relative;
+	top: -20px;
+	left: 70px;
+	width: 40%;
+	height: 550px;
+	font-size: 10pt;
+}
+div.bikeinfo2{
+	position: relative;
+	top: 10px;
+	left: 14px;
+	width: 48%;
+	height: 360px;
+
+
+}
+.boxContainer {
+	overflow: hidden;
+	height: 500px;
+}
+div.boxcommon{
+	width: 48%;
+	border: 2px #808080 solid;
+}
+div.imgfield2{
+position: relative;
+	top: 10px;
+	left: 0px;
+	border: 1px #E3E3E3 solid;
+	height: 400px;  /* 高さを制限(※) */
+   overflow-y: scroll; /* スクロールバーを表示(※) */
+
+}
+.boxtytle{
+	position: relative;
+	top: 10px;
+	left: 0px;
+
+	height: 70px;
+	background-color:#2b3f7f;
+
+}
+.querytext{
+	position: relative;
+	top: 10px;
+	left: 0px;
+	width: 47%;
+	height: 400px;
+
+}
+.box {
+	float: left;
+}
+/* clearfix */
+.:before,
+.boxContainer:after {
+    content: "";
+    display: table;
+}
+
+.boxContainer:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.boxContainer {
+    zoom: 1;
+}
+#price {
+	color:red;
+}
+.explainbox{
+	text-align:center;
+	line-height: 100px;
+	width: 98%;
+	height: 601px;
+	 background: #EEEEEE;
+}
+.explainbox2{
+	text-align:center;
+	line-height: 100px;
+	width: 98%;
+	height: 100px;
+	 background: #EEEEEE;
+}
+.Wexplainbox{
+	text-align:3%;
+	width: 99%;
+	height: 500px;
+	 background: white;
+}
+#Wexplainbox2{
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 99%;
+	height: 495px;
+	 background: white;
+}
+#mainimg{
+	display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    width:540px;
+	height:500px;
+    max-width:540px;
+	max-height:500px;
+}
+#largeImg{
+        display: none;  // 非表示
+}
+#back-curtain{
+        background: rgba(0, 0, 0, 0.5); // ③透過率５０％
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+}
+.subcommon{
+	display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+}
+a.querysubmit{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+div.daimei{
+	position: absolute;
+    top: 30%;
+    left: 15px;
+    margin: -0.5em;
+	color:white;
+	width: 100%;
+	height: 60px;
+	font-size: 20pt;
+	text-align: center;
+	vertical-align: bottom
+
+}
+/*テーブル
+---------------------------------------------------------------------------*/
+/*ta1,ta2共通設定*/
+.querytable {
+	width: 100%;
+	margin: 0 0 30px;
+	border: solid 2px #627295;
+	font-size: 10pt;
+}
+.querytable, .querytable td, .querytable th{
+	border: solid 4px #627295;	/*テーブルの枠線の幅、線種、色*/
+	line-height: 2;
+	padding: 5px;	/*ボックス内の余白*/
+	border: solid 2px #627295;
+}
+/*テーブル１行目に入った見出し部分*/
+.querytable th.tamidashi{
+	width: auto;
+	text-align: left;	/*左よせ*/
+	background: #cce6f6;	/*背景色*/
+	font-weight: bold;
+}
+/*ta1の左側ボックス*/
+.querytable th {
+	width: 100px;	/*幅*/
+	text-align: center;	/*センタリング*/
+	background: #f0f0f0;	/*背景色*/
+	font-weight: normal;
+	border: solid 2px #627295;
+}
